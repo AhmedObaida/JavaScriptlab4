@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+    <div id="reg-form">
+        <form action="" method="post">
+
+            <input type="text" id="fullname" required placeholder="Enter your Name:" onfocus="showBorder()" onblur="removeBorder()">
+            <small id="invalidname"  style="display: none;" >invalid name</small>
+            <br>
+            <input type="email" id="email" required placeholder="Email Address">
+            <br>
+            <select name="City" id="city">
+                <option value="Aswan">Aswan</option>
+                <option value="Cairo">Cairo</option>
+                <option value="Giza">Giza</option>
+            </select>
+            <br>
+            <input type="password" id="password" class="pass" placeholder="Password"  onblur="passwordMatching()">
+            <br>
+            <input type="password" id="repeat-password" class="pass" required placeholder="Reset Password" onblur="passwordMatching()">
+            <span id="password-match" style="display: none;">password doesn't match</span>
+            <br>
+            <label for="terms">I accept the terms and conditions</label>
+            <input type="checkbox" name="" id="terms" value="checked">
+            <br><br>
+            <input type="submit" onclick="goToWelcomePage()">
+            
+
+        </form>
+    </div>
+    
+    <script src="task1.js"></script>
+</body>
+</html>
